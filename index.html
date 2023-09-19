@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo-barbershop.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Barbershop in Kyiv, Ukraine" />
+    <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container header-thumb">
+        <nav class="navigation">
+          <a class="nav-logo-link link" href="/index.html">
+            <svg class="nav-logo-icon" width="70" height="55">
+              <use href="./images/icons.svg#logotype-icon"></use>
+            </svg>
+          </a>
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#about">About</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#services-prices"
+                >Services and prices</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#barbers">Barbers</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="phone-btn-booking-thumb">
+          <a class="header-phone-link link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <a href="#booking" class="header-button-booking"> Online-booking </a>
+        </div>
+        <button class="burger-menu-open-button" type="button">
+          <svg class="burger-menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="burger-menu">
+        <div class="burger-menu-container">
+          <button type="button" class="burger-menu-close-btn">
+            <svg class="burger-menu-icon-close" width="40" height="40">
+              <use href="./images/icons.svg#burger-menu-icon-close"></use>
+            </svg>
+          </button>
+          <ul class="burger-menu-nav-list list">
+            <li class="burger-menu-nav-item">
+              <a href="#about" class="burger-menu-soc-nav-link">About</a>
+            </li>
+            <li class="burger-menu-nav-item">
+              <a href="#services-prices" class="burger-menu-soc-nav-link"
+                >Services and prices</a
+              >
+            </li>
+            <li class="burger-menu-nav-item">
+              <a href="#barbers" class="burger-menu-soc-nav-link">Barbers</a>
+            </li>
+            <li class="burger-menu-nav-item">
+              <a href="#contacts" class="burger-menu-soc-nav-link">Contacts</a>
+            </li>
+          </ul>
+          <a href="tel:+380441111111" class="burger-menu-phone"
+            >+38 044 111 11 11</a
+          >
+          <a href="#booking" class="burger-menu-booking-link">
+            online-booking
+          </a>
+          <ul class="burger-menu-soc-list list">
+            <div>
+              <li class="burger-menu-soc-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram link"
+                  class="burger-menu-soc-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="burger-menu-soc-item">
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Youtube link"
+                  class="burger-menu-soc-link"
+                  >Youtube</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero hero-section">
+        <div class="container hero-container">
+          <ul class="hero-soc-list list">
+            <li class="hero-soc-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram link"
+                class="hero-soc-link"
+                >Instagram</a
+              >
+            </li>
+            <li class="hero-soc-item">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube link"
+                class="hero-soc-link"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+          <div class="hero-text-wrap">
+            <p class="hero-up-text">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-down-text">
+              We are experts in trendy men's haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="about-section"
+        id="about"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        <div class="container about-container">
+          <ul class="about-img-list list">
+            <li class="about-img-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/img-1-descktop-1x.webp 1x,
+                    ./images/about/img-1-descktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/img-1-descktop-1x.jpg 1x,
+                    ./images/about/img-1-descktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about/img-1-tablet-1x.webp 1x,
+                    ./images/about/img-1-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/img-1-tablet-1x.jpg 1x,
+                    ./images/about/img-1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/about/img-1-tablet-1x.jpg"
+                  alt="A shaving process in barbershop"
+                  width="330"
+                  height="235"
+                  class="about-img"
+                />
+              </picture>
+            </li>
+            <li class="about-img-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/img-2-descktop-1x.webp 1x,
+                    ./images/about/img-2-descktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/img-2-descktop-1x.jpg 1x,
+                    ./images/about/img-2-descktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/about/img-2-tablet-1x.webp 1x,
+                    ./images/about/img-2-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/img-2-tablet-1x.jpg 1x,
+                    ./images/about/img-2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/about/img-2-tablet-1x.jpg"
+                  alt="A shaving process in barbershop"
+                  width="330"
+                  height="235"
+                  class="about-img"
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="about-text-wrap">
+            <p class="about-up-text">About</p>
+            <h2 class="about-title">Best Barbershop in your city</h2>
+            <p class="about-middle-text">
+              If you want to add more confidence to your image, you should
+              <span class="about-word-definitely">definitely</span> visit us.
+            </p>
+            <p class="about-bottom-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <a href="#booking" class="about-button">Online-booking</a>
+          </div>
+        </div>
+      </section>
+      <section class="services-prices" id="services-prices">
+        <div class="container">
+          <p class="serv-pric-text">Spend your time with the best masters</p>
+          <h2 class="serv-pric-title">Services and prices</h2>
+          <div class="serv-pric-list-wrap">
+            <ul
+              class="serv-pric-list list"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
+              <li class="serv-pric-item">
+                <p class="serv-pric-item-haircut">Men's haircut</p>
+                <p class="serv-pric-item-price">from 300 uah.</p>
+              </li>
+              <li class="serv-pric-item">
+                <p class="serv-pric-item-beard">Beard trim</p>
+                <p class="serv-pric-item-price">from 300 uah.</p>
+              </li>
+              <li class="serv-pric-item">
+                <p class="serv-pric-item-mustache">Mustache trim</p>
+                <p class="serv-pric-item-price">from 200 uah.</p>
+              </li>
+              <li class="serv-pric-item serv-pric-last-item">
+                <p class="serv-pric-item-shave">Straight razor shave</p>
+                <p class="serv-pric-item-price">from 200 uah.</p>
+              </li>
+            </ul>
+            <ul
+              class="serv-pric-list list"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
+              <li class="serv-pric-item">
+                <p class="serv-pric-item-trainee">Trainee's haircut</p>
+                <p class="serv-pric-item-price">from 50 uah.</p>
+              </li>
+              <li class="serv-pric-item">
+                <p class="serv-pric-item-nozzle">Haircut under the nozzle</p>
+                <p class="serv-pric-item-price">from 200 uah.</p>
+              </li>
+              <li class="serv-pric-item">
+                <p class="serv-pric-item-children">
+                  Children's haircut (0-12 y.o.)
+                </p>
+                <p class="serv-pric-item-price">from 300 uah.</p>
+              </li>
+              <li class="serv-pric-item">
+                <p class="serv-pric-item-camouflage">Camouflage of gray hair</p>
+                <p class="serv-pric-item-price">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
+          <a href="#booking" class="serv-pric-button">Online-booking</a>
+        </div>
+      </section>
+      <section class="benefits" data-aos="fade-up" data-aos-duration="3000">
+        <div class="container benefits-container">
+          <div class="benefits-text-wrap">
+            <p class="benefits-upper-text">Old traditional school</p>
+            <h2 class="benefits-title">¿Why people come to us?</h2>
+            <p class="benefits-bottom-text">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
+          <ul class="benefits-list list">
+            <li class="benefits-list-item item-600">
+              <span class="benefits-list-number">600</span>
+              <p class="benefits-list-text">Satisfied customers per day</p>
+            </li>
+            <li class="benefits-list-item item-50">
+              <span class="benefits-list-number">50</span>
+              <p class="benefits-list-text">Awards for excellent service</p>
+            </li>
+            <li class="benefits-list-item item-20">
+              <span class="benefits-list-number">20</span>
+              <p class="benefits-list-text">Kyiv's best barbers</p>
+            </li>
+            <li class="benefits-list-item item-100">
+              <span class="benefits-list-number">100</span>
+              <p class="benefits-list-text">Gifts for regular customers</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="our-barbers"
+        id="barbers"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        <div class="our-barbers-container">
+          <p class="our-barbers-up-text">For true enjoyers of the atmosphere</p>
+          <h2 class="our-barbers-title">Our barbers</h2>
+          <ul class="our-barbers-list list">
+            <li class="our-barbers-list-item">
+              <img
+                srcset="
+                  ./images/our-barbers/barbers-john-2x.webp 2x,
+                  ./images/our-barbers/barbers-john-1x.webp 1x,
+                  ./images/our-barbers/barbers-john-2x.jpg  2x,
+                  ./images/our-barbers/barbers-john-1x.jpg  1x
+                "
+                src="./images/our-barbers/barbers-john-1x.jpg"
+                alt="Photo of barber John Smith"
+                width="418"
+                height="346"
+                class="our-barbers-list-img"
+              />
+              <h3 class="our-barbers-list-name">John Smith</h3>
+              <p class="our-barbers-list-position">Extreme Barber</p>
+              <ul class="our-barbers-soc-list list">
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Instagram link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://twitter.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Twitter link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://uk-ua.facebook.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Facebook link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Linkedin link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-barbers-list-item">
+              <img
+                srcset="
+                  ./images/our-barbers/barbers-michele-2x.webp 2x,
+                  ./images/our-barbers/barbers-michele-1x.webp 1x,
+                  ./images/our-barbers/barbers-michele-2x.jpg  2x,
+                  ./images/our-barbers/barbers-michele-1x.jpg  1x
+                "
+                src="./images/our-barbers/barbers-michele-1x.jpg"
+                alt="Photo of barber Michele Doe"
+                width="418"
+                height="346"
+                class="our-barbers-list-img"
+              />
+              <h3 class="our-barbers-list-name">Michele Doe</h3>
+              <p class="our-barbers-list-position">Extreme Barber</p>
+              <ul class="our-barbers-soc-list list">
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Instagram link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://twitter.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Twitter link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://uk-ua.facebook.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Facebook link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Linkedin link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-barbers-list-item">
+              <img
+                srcset="
+                  ./images/our-barbers/barbers-alan-2x.webp 2x,
+                  ./images/our-barbers/barbers-alan-1x.webp 1x,
+                  ./images/our-barbers/barbers-alan-2x.jpg  2x,
+                  ./images/our-barbers/barbers-alan-1x.jpg  1x
+                "
+                src="./images/our-barbers/barbers-alan-1x.jpg"
+                alt="Photo of barber Alan Black"
+                width="418"
+                height="346"
+                class="our-barbers-list-img"
+              />
+              <h3 class="our-barbers-list-name">Alan Black</h3>
+              <p class="our-barbers-list-position">Extreme Barber</p>
+              <ul class="our-barbers-soc-list list">
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Instagram link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://twitter.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Twitter link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://uk-ua.facebook.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Facebook link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-barbers-soc-list-item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Linkedin link"
+                    class="our-barbers-soc-link link"
+                  >
+                    <svg width="20" height="20" class="our-barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <p class="gallery-up-text">In Latin, "barba" means "beard"</p>
+          <ul class="gallery-list list">
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-1-decktop-1x.webp 1x,
+                    ./images/gallery/img-1-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-decktop-1x.jpg 1x,
+                    ./images/gallery/img-1-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-tablet-1x.webp 1x,
+                    ./images/gallery/img-1-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-tablet-1x.jpg 1x,
+                    ./images/gallery/img-1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-mobile-1x.webp 1x,
+                    ./images/gallery/img-1-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-mobile-1x.jpg 1x,
+                    ./images/gallery/img-1-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-1-mobile-1x.jpg"
+                  alt="A hair cutting process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-2-decktop-1x.webp 1x,
+                    ./images/gallery/img-2-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-decktop-1x.jpg 1x,
+                    ./images/gallery/img-2-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-tablet-1x.webp 1x,
+                    ./images/gallery/img-2-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-tablet-1x.jpg 1x,
+                    ./images/gallery/img-2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-mobile-1x.webp 1x,
+                    ./images/gallery/img-2-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-mobile-1x.jpg 1x,
+                    ./images/gallery/img-2-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-2-mobile-1x.jpg"
+                  alt="A shaving process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-3-decktop-1x.webp 1x,
+                    ./images/gallery/img-3-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-decktop-1x.jpg 1x,
+                    ./images/gallery/img-3-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-tablet-1x.webp 1x,
+                    ./images/gallery/img-3-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-tablet-1x.jpg 1x,
+                    ./images/gallery/img-3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-mobile-1x.webp 1x,
+                    ./images/gallery/img-3-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-mobile-1x.jpg 1x,
+                    ./images/gallery/img-3-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-3-mobile-1x.jpg"
+                  alt="A facial steaming process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-4-decktop-1x.webp 1x,
+                    ./images/gallery/img-4-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-decktop-1x.jpg 1x,
+                    ./images/gallery/img-4-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-tablet-1x.webp 1x,
+                    ./images/gallery/img-4-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-tablet-1x.jpg 1x,
+                    ./images/gallery/img-4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-mobile-1x.webp 1x,
+                    ./images/gallery/img-4-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-mobile-1x.jpg 1x,
+                    ./images/gallery/img-4-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-4-mobile-1x.jpg"
+                  alt="A neck shaving process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="booking-contacts-wrap">
+        <section class="online-booking" id="booking">
+          <div class="container booking-container">
+            <h2 class="booking-title">Online-booking</h2>
+            <form class="booking-form">
+              <div class="inputs-wrap">
+                <label class="booking-name">
+                  <input
+                    class="booking-form-input"
+                    type="text"
+                    name="user-name"
+                    placeholder="name*"
+                    required
+                    pattern="[a-zA-Zа-яА-Я]+"
+                    minlength="2"
+                  />
+                </label>
+                <label class="booking-phone">
+                  <input
+                    class="booking-form-input"
+                    type="tel"
+                    name="user-phone"
+                    placeholder="phone*"
+                    required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    title="111-111-11-11"
+                  />
+                </label>
+              </div>
+              <textarea
+                class="booking-form-input booking-message"
+                name="message"
+                placeholder="message"
+              ></textarea>
+              <button class="booking-button" type="submit">send</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="container contacts-container">
+            <h2 class="contacts-title">Contacts</h2>
+            <div class="contacts-hours-wrap">
+              <address class="address">
+                <ul class="address-list list">
+                  <li class="address-list-item">
+                    <a
+                      href="https://goo.gl/maps/nPK15U31zdAM6EacA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Address link in google map"
+                      class="address-map-link"
+                    >
+                      <svg class="address-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-map-pin"></use>
+                      </svg>
+                      st. Vasilkivska, 7A Kyiv, 08132
+                    </a>
+                  </li>
+                  <li class="address-list-item">
+                    <a href="tel:+38 044 111 11 11" class="address-phone-link">
+                      <svg class="address-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="address-list-item">
+                    <a
+                      href="mailto:barbershop@email.com"
+                      class="address-mail-link"
+                    >
+                      <svg class="address-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>
+                      barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+              <div class="work-hours-wrap">
+                <h3 class="work-hours-title">Working hours</h3>
+                <p class="work-hours-text">Every day from 9:00 to 22:00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer-section">
+      <div class="container footer-container">
+        <p class="copyright-text">&#xa9; Copyright 2023</p>
+        <ul class="footer-soc-list list">
+          <li class="footer-soc-item">
+            <a
+              href="https://www.instagram.com/"
+              class="footer-soc-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram link"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer-soc-item">
+            <a
+              href="https://www.youtube.com/"
+              class="footer-soc-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="youtube link"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/burger-menu.js" type="module"></script>
+  </body>
+</html>
