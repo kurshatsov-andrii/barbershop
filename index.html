@@ -2,11 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/logo-barbershop.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Barbershop in Kharkiv, Ukraine" />
-    <title>Barbershop in Kharkiv</title>
+    <meta
+      name="description"
+      content="Website development for Barbershop in Kharkiv - Kurshatsov Andrii. My Viber/Telegram +38(066)468-81-51."
+    />
+    <title>Project for Barbershop in Kharkiv - Andrii Kurshatsov</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
@@ -50,9 +53,14 @@
           <a class="header-phone-link link" href="tel:+380664688151"
             >+38 066 468 81 51</a
           >
-          <a href="#booking" class="header-button-booking"> Online-booking </a>
+          <a
+            href="#booking"
+            class="header-button-booking"
+            aria-label="Online-booking"
+            >Online-booking</a
+          >
         </div>
-        <button class="burger-menu-open-button" type="button">
+        <button class="burger-menu-open-button" type="button" aria-label="Menu">
           <svg class="burger-menu-icon" width="40" height="40">
             <use href="./images/icons.svg#burger-menu-icon"></use>
           </svg>
@@ -60,7 +68,11 @@
       </div>
       <div class="burger-menu">
         <div class="burger-menu-container">
-          <button type="button" class="burger-menu-close-btn">
+          <button
+            type="button"
+            class="burger-menu-close-btn"
+            aria-label="Close menu"
+          >
             <svg class="burger-menu-icon-close" width="40" height="40">
               <use href="./images/icons.svg#burger-menu-icon-close"></use>
             </svg>
@@ -87,30 +99,31 @@
           <a href="#booking" class="burger-menu-booking-link">
             online-booking
           </a>
-          <ul class="burger-menu-soc-list list">
-            <div>
+
+          <div class="burger-menu-soc-list">
+            <ul class="list">
               <li class="burger-menu-soc-item">
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/seoinar/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram link"
+                  aria-label="Instagram"
                   class="burger-menu-soc-link"
                   >Instagram</a
                 >
               </li>
               <li class="burger-menu-soc-item">
                 <a
-                  href="https://www.youtube.com/"
+                  href="https://www.youtube.com/c/SeoinarUa1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Youtube link"
+                  aria-label="Youtube"
                   class="burger-menu-soc-link"
                   >Youtube</a
                 >
               </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -120,20 +133,20 @@
           <ul class="hero-soc-list list">
             <li class="hero-soc-item">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/seoinar/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram link"
+                aria-label="Instagram"
                 class="hero-soc-link"
                 >Instagram</a
               >
             </li>
             <li class="hero-soc-item">
               <a
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/c/SeoinarUa1"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Youtube link"
+                aria-label="Youtube"
                 class="hero-soc-link"
                 >Youtube</a
               >
@@ -161,26 +174,10 @@
               <picture>
                 <source
                   srcset="
-                    ./images/about/img-1-descktop-1x.webp 1x,
-                    ./images/about/img-1-descktop-2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/about/img-1-descktop-1x.jpg 1x,
                     ./images/about/img-1-descktop-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/about/img-1-tablet-1x.webp 1x,
-                    ./images/about/img-1-tablet-2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -202,26 +199,10 @@
               <picture>
                 <source
                   srcset="
-                    ./images/about/img-2-descktop-1x.webp 1x,
-                    ./images/about/img-2-descktop-2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/about/img-2-descktop-1x.jpg 1x,
                     ./images/about/img-2-descktop-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/about/img-2-tablet-1x.webp 1x,
-                    ./images/about/img-2-tablet-2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -254,7 +235,9 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <a href="#booking" class="about-button">Online-booking</a>
+            <a href="#booking" class="about-button" aria-label="Online-booking"
+              >Online-booking</a
+            >
           </div>
         </div>
       </section>
@@ -310,7 +293,12 @@
               </li>
             </ul>
           </div>
-          <a href="#booking" class="serv-pric-button">Online-booking</a>
+          <a
+            href="#booking"
+            class="serv-pric-button"
+            aria-label="Online-booking"
+            >Online-booking</a
+          >
         </div>
       </section>
       <section class="benefits" data-aos="fade-up" data-aos-duration="3000">
@@ -356,10 +344,8 @@
             <li class="our-barbers-list-item">
               <img
                 srcset="
-                  ./images/our-barbers/barbers-john-2x.webp 2x,
-                  ./images/our-barbers/barbers-john-1x.webp 1x,
-                  ./images/our-barbers/barbers-john-2x.jpg  2x,
-                  ./images/our-barbers/barbers-john-1x.jpg  1x
+                  ./images/our-barbers/barbers-john-2x.jpg 2x,
+                  ./images/our-barbers/barbers-john-1x.jpg 1x
                 "
                 src="./images/our-barbers/barbers-john-1x.jpg"
                 alt="Photo of barber John Smith"
@@ -372,10 +358,10 @@
               <ul class="our-barbers-soc-list list">
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/seoinar/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Instagram link"
+                    aria-label="Instagram"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -385,10 +371,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://twitter.com/"
+                    href="https://twitter.com/SEOinar"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Twitter link"
+                    aria-label="Twitter"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -398,10 +384,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://uk-ua.facebook.com/"
+                    href="https://www.facebook.com/studio.seoinar"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Facebook link"
+                    aria-label="Facebook"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -411,10 +397,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/seoinar/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Linkedin link"
+                    aria-label="Linkedin"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -427,10 +413,8 @@
             <li class="our-barbers-list-item">
               <img
                 srcset="
-                  ./images/our-barbers/barbers-michele-2x.webp 2x,
-                  ./images/our-barbers/barbers-michele-1x.webp 1x,
-                  ./images/our-barbers/barbers-michele-2x.jpg  2x,
-                  ./images/our-barbers/barbers-michele-1x.jpg  1x
+                  ./images/our-barbers/barbers-michele-2x.jpg 2x,
+                  ./images/our-barbers/barbers-michele-1x.jpg 1x
                 "
                 src="./images/our-barbers/barbers-michele-1x.jpg"
                 alt="Photo of barber Michele Doe"
@@ -443,10 +427,10 @@
               <ul class="our-barbers-soc-list list">
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/seoinar/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Instagram link"
+                    aria-label="Instagram"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -456,10 +440,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://twitter.com/"
+                    href="https://twitter.com/SEOinar"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Twitter link"
+                    aria-label="Twitter"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -469,10 +453,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://uk-ua.facebook.com/"
+                    href="https://www.facebook.com/studio.seoinar"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Facebook link"
+                    aria-label="Facebook"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -482,10 +466,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/seoinar/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Linkedin link"
+                    aria-label="Linkedin"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -498,10 +482,8 @@
             <li class="our-barbers-list-item">
               <img
                 srcset="
-                  ./images/our-barbers/barbers-alan-2x.webp 2x,
-                  ./images/our-barbers/barbers-alan-1x.webp 1x,
-                  ./images/our-barbers/barbers-alan-2x.jpg  2x,
-                  ./images/our-barbers/barbers-alan-1x.jpg  1x
+                  ./images/our-barbers/barbers-alan-2x.jpg 2x,
+                  ./images/our-barbers/barbers-alan-1x.jpg 1x
                 "
                 src="./images/our-barbers/barbers-alan-1x.jpg"
                 alt="Photo of barber Alan Black"
@@ -514,10 +496,10 @@
               <ul class="our-barbers-soc-list list">
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/seoinar/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Instagram link"
+                    aria-label="Instagram"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -527,10 +509,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://twitter.com/"
+                    href="https://twitter.com/SEOinar"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Twitter link"
+                    aria-label="Twitter"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -540,10 +522,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://uk-ua.facebook.com/"
+                    href="https://www.facebook.com/studio.seoinar"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Facebook link"
+                    aria-label="Facebook"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -553,10 +535,10 @@
                 </li>
                 <li class="our-barbers-soc-list-item">
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/seoinar/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label="Linkedin link"
+                    aria-label="Linkedin"
                     class="our-barbers-soc-link link"
                   >
                     <svg width="20" height="20" class="our-barbers-soc-icon">
@@ -581,14 +563,6 @@
               <picture>
                 <source
                   srcset="
-                    ./images/gallery/img-1-decktop-1x.webp 1x,
-                    ./images/gallery/img-1-decktop-2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-1-decktop-1x.jpg 1x,
                     ./images/gallery/img-1-decktop-2x.jpg 2x
                   "
@@ -596,26 +570,10 @@
                 />
                 <source
                   srcset="
-                    ./images/gallery/img-1-tablet-1x.webp 1x,
-                    ./images/gallery/img-1-tablet-2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-1-tablet-1x.jpg 1x,
                     ./images/gallery/img-1-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/gallery/img-1-mobile-1x.webp 1x,
-                    ./images/gallery/img-1-mobile-2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -641,14 +599,6 @@
               <picture>
                 <source
                   srcset="
-                    ./images/gallery/img-2-decktop-1x.webp 1x,
-                    ./images/gallery/img-2-decktop-2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-2-decktop-1x.jpg 1x,
                     ./images/gallery/img-2-decktop-2x.jpg 2x
                   "
@@ -656,26 +606,10 @@
                 />
                 <source
                   srcset="
-                    ./images/gallery/img-2-tablet-1x.webp 1x,
-                    ./images/gallery/img-2-tablet-2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-2-tablet-1x.jpg 1x,
                     ./images/gallery/img-2-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/gallery/img-2-mobile-1x.webp 1x,
-                    ./images/gallery/img-2-mobile-2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -701,14 +635,6 @@
               <picture>
                 <source
                   srcset="
-                    ./images/gallery/img-3-decktop-1x.webp 1x,
-                    ./images/gallery/img-3-decktop-2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-3-decktop-1x.jpg 1x,
                     ./images/gallery/img-3-decktop-2x.jpg 2x
                   "
@@ -716,26 +642,10 @@
                 />
                 <source
                   srcset="
-                    ./images/gallery/img-3-tablet-1x.webp 1x,
-                    ./images/gallery/img-3-tablet-2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-3-tablet-1x.jpg 1x,
                     ./images/gallery/img-3-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/gallery/img-3-mobile-1x.webp 1x,
-                    ./images/gallery/img-3-mobile-2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -761,14 +671,6 @@
               <picture>
                 <source
                   srcset="
-                    ./images/gallery/img-4-decktop-1x.webp 1x,
-                    ./images/gallery/img-4-decktop-2x.webp 2x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-4-decktop-1x.jpg 1x,
                     ./images/gallery/img-4-decktop-2x.jpg 2x
                   "
@@ -776,26 +678,10 @@
                 />
                 <source
                   srcset="
-                    ./images/gallery/img-4-tablet-1x.webp 1x,
-                    ./images/gallery/img-4-tablet-2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
                     ./images/gallery/img-4-tablet-1x.jpg 1x,
                     ./images/gallery/img-4-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/gallery/img-4-mobile-1x.webp 1x,
-                    ./images/gallery/img-4-mobile-2x.webp 2x
-                  "
-                  media="(max-width: 767px)"
-                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -850,7 +736,9 @@
                 name="message"
                 placeholder="message"
               ></textarea>
-              <button class="booking-button" type="submit">send</button>
+              <button class="booking-button" type="submit" aria-label="Send">
+                Send
+              </button>
             </form>
           </div>
         </section>
@@ -865,17 +753,17 @@
                       href="https://maps.app.goo.gl/wDFTZpvjFRdCR4QSA"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Address link in google map"
+                      aria-label="st. Vlasenko, 24 Kharkiv"
                       class="address-map-link"
                     >
                       <svg class="address-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-map-pin"></use>
                       </svg>
-                      st. Vlasenko, 24 Kharkiv, 61157
+                      st. Vlasenko, 24 Kharkiv
                     </a>
                   </li>
                   <li class="address-list-item">
-                    <a href="tel:+38 066 468 81 51" class="address-phone-link">
+                    <a href="tel:+380664688151" class="address-phone-link">
                       <svg class="address-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-phone"></use>
                       </svg>
@@ -884,13 +772,13 @@
                   </li>
                   <li class="address-list-item">
                     <a
-                      href="mailto:barbershop@gmail.com"
+                      href="mailto:info@seoinar.com.ua"
                       class="address-mail-link"
                     >
                       <svg class="address-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-mail"></use>
                       </svg>
-                      barbershop@gmail.com
+                      info@seoinar.com.ua
                     </a>
                   </li>
                 </ul>
@@ -906,25 +794,25 @@
     </main>
     <footer class="footer-section">
       <div class="container footer-container">
-        <p class="copyright-text">&#xa9; Copyright 2023 - 2024</p>
+        <p class="copyright-text">&#xa9; Copyright 2023</p>
         <ul class="footer-soc-list list">
           <li class="footer-soc-item">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/seoinar/"
               class="footer-soc-link"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="instagram link"
+              aria-label="instagram"
               >Instagram</a
             >
           </li>
           <li class="footer-soc-item">
             <a
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/c/SeoinarUa1"
               class="footer-soc-link"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="youtube link"
+              aria-label="Youtube"
               >Youtube</a
             >
           </li>

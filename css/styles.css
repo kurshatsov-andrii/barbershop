@@ -376,6 +376,11 @@ img {
     color: var(--title-black-color);
 }
 
+.burger-menu-soc-link:hover,
+.burger-menu-soc-link:focus{
+    color: #ff6c00;
+}
+
 @media screen and (min-width: 480px) {
     .burger-menu-container {
         width: 336px;
@@ -749,9 +754,7 @@ img {
     padding-top: 84px;
     padding-bottom: 84px;
     background-color: rgba(17, 19, 25, 0.9);
-    background-image: image-set("../images/serv-and-prices/mob-1x.webp" type("image/webp") 1x,
-            "../images/serv-and-prices/mob-2x.webp" type("image/webp") 2x,
-            "../images/serv-and-prices/mob-1x.png" type("image/png") 1x,
+    background-image: image-set("../images/serv-and-prices/mob-1x.png" type("image/png") 1x,
             "../images/serv-and-prices/mob-2x.png" type("image/png") 2x);
     background-repeat: no-repeat;
     background-size: cover;
@@ -923,9 +926,7 @@ img {
     .services-prices {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-image: image-set("../images/serv-and-prices/tablet-1x.webp" type("image/webp") 1x,
-                "../images/serv-and-prices/tablet-2x.webp" type("image/webp") 2x,
-                "../images/serv-and-prices/tablet-1x.png" type("image/png") 1x,
+        background-image: image-set("../images/serv-and-prices/tablet-1x.png" type("image/png") 1x,
                 "../images/serv-and-prices/tablet-2x.png" type("image/png") 2x);
     }
 
@@ -994,9 +995,7 @@ img {
     .services-prices {
         padding-top: 120px;
         padding-bottom: 120px;
-        background-image: image-set("../images/serv-and-prices/decktop-1x.webp" type("image/webp") 1x,
-                "../images/serv-and-prices/desktop-2x.webp" type("image/webp") 2x,
-                "../images/serv-and-prices/desktop-1x.png" type("image/png") 1x,
+        background-image: image-set("../images/serv-and-prices/desktop-1x.png" type("image/png") 1x,
                 "../images/serv-and-prices/desktop-2x.png" type("image/png") 2x);
     }
 
@@ -1630,9 +1629,7 @@ img {
     padding-top: 84px;
     padding-bottom: 84px;
     background-color: #191c26;
-    background-image: image-set("../images/contacts/contacts-bg-mobile-1x.webp" type("image/webp") 1x,
-            "../images/contacts/contacts-bg-mobile-2x.webp" type("image/webp") 2x,
-            "../images/contacts/contacts-bg-mobile-1x.png" type("image/png") 1x,
+    background-image: image-set("../images/contacts/contacts-bg-mobile-1x.png" type("image/png") 1x,
             "../images/contacts/contacts-bg-mobile-2x.png" type("image/png") 2x);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1749,9 +1746,7 @@ img {
     .contacts {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-image: image-set("../images/contacts/contacts-bg-tablet-1x.webp" type("image/webp") 1x,
-                "../images/contacts/contacts-bg-tablet-2x.webp" type("image/webp") 2x,
-                "../images/contacts/contacts-bg-tablet-1x.png" type("image/png") 1x,
+        background-image: image-set("../images/contacts/contacts-bg-tablet-1x.png" type("image/png") 1x,
                 "../images/contacts/contacts-bg-tablet-2x.png" type("image/png") 2x);
     }
 
@@ -1776,9 +1771,7 @@ img {
         padding-bottom: 111px;
         padding-left: 130px;
         background-color: transparent;
-        background-image: image-set("../images/contacts/contacts-bg-desktop-1x.webp" type("image/webp") 1x,
-                "../images/contacts/contacts-bg-desktop-2x.webp" type("image/webp") 2x,
-                "../images/contacts/contacts-bg-desktop-1x.png" type("image/png") 1x,
+        background-image: image-set("../images/contacts/contacts-bg-desktop-1x.png" type("image/png") 1x,
                 "../images/contacts/contacts-bg-desktop-2x.png" type("image/png") 2x);
         background-repeat: no-repeat;
     }
